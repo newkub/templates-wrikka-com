@@ -1,5 +1,5 @@
 {
-	"publisher": "newkubise",
+	"publisher": "vscode-vue",
 	"name": "your-extension",
 	"displayName": "Your Extension",
 	"type": "module",
