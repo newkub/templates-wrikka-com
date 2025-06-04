@@ -1,0 +1,32 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"globalDependencies": ["vitepress", "vue"],
+	"tasks": {
+		"build": {
+			"dependsOn": ["^build"],
+			"inputs": ["$TURBO_DEFAULT$", ".env*"],
+			"outputs": ["dist/**", ".nuxt/**", ".output/**"]
+		},
+		"prepare": {
+			"dependsOn": ["^prepare"]
+		},
+		"lint": {
+			"dependsOn": ["^lint"],
+			"outputs": []
+		},
+		"format": {
+			"dependsOn": ["^format"],
+			"outputs": []
+		},
+		"check-types": {
+			"dependsOn": ["^check-types"]
+		},
+		"dev": {
+			"cache": false,
+			"persistent": true
+		},
+		"export": {
+			"outputs": ["dist/**"]
+		}
+	}
+}

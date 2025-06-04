@@ -1,0 +1,49 @@
+{
+	"publisher": "newkubise",
+	"name": "your-extension",
+	"displayName": "Your Extension",
+	"type": "module",
+	"version": "0.0.1",
+	"private": true,
+	"categories": [
+		"Other"
+	],
+	"main": "./dist/extension.cjs",
+	"engines": {
+		"vscode": "^1.100.0"
+	},
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"contributes": {
+		"commands": [
+			{
+				"command": "your-extension.helloWorld",
+				"title": "Hello World"
+			}
+		],
+		"configuration": {
+			"title": "Your Extension",
+			"properties": {
+				"your-extension.message": {
+					"type": "string",
+					"default": "Hello World",
+					"description": "The message to show in the notification"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"build": "tsdown --env.NODE_ENV production",
+		"dev": "tsdown --watch ./src --env.NODE_ENV development",
+		"typecheck": "tsc --noEmit",
+		"vscode:prepublish": "bun run build"
+	},
+	"devDependencies": {
+		"@types/node": "18.x",
+		"@types/vscode": "^1.100.0",
+		"reactive-vscode": "^0.2.19",
+		"tsdown": "^0.11.13",
+		"typescript": "^5.8.3"
+	}
+}

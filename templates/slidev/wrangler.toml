@@ -1,0 +1,11 @@
+
+name = "slidev"
+main = "dist/worker.js"
+compatibility_date = "2024-04-11"
+
+[site]
+bucket = "./slides"
+
+[build]
+command = "bun run build"
+

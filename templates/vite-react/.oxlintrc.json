@@ -1,0 +1,16 @@
+{
+	"plugins": [
+		"oxc",
+		"react",
+		"unicorn",
+		"react-perf",
+		"jsx",
+		"jsx-a11y",
+		"promise",
+		"vitest",
+		"typescript"
+	],
+	"env": {
+		"browser": true
+	}
+}

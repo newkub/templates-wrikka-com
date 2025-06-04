@@ -1,0 +1,131 @@
+/* Docs */
+.vp-doc a {
+	text-decoration: none;
+}
+
+.vp-code-group .tabs label {
+	display: flex;
+	gap: 0.3rem;
+	align-items: center;
+}
+
+/* Algolia */
+.DocSearch {
+	--docsearch-primary-color: var(--vp-c-brand-1) !important;
+}
+
+/* Navbar flyout button */
+.VPFlyout .button {
+	border: none;
+	background-color: transparent;
+}
+
+/* Custom styles for iframe */
+.vp-doc iframe {
+	width: 100% !important; /* Override inline width */
+	height: auto !important; /* Override inline height */
+	aspect-ratio: 16 / 9;
+	border-radius: 8px;
+	border: 1px solid var(--vp-c-divider);
+}
+
+/* Container for responsive iframe */
+.vp-doc .iframe-container {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.vp-doc .iframe-container::before {
+	content: "";
+	display: block;
+	padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.vp-doc .iframe-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+/* YouTube specific ratio */
+.vp-doc .youtube-container {
+	aspect-ratio: 16 / 9;
+	width: 100%;
+}
+
+.vp-doc .youtube-container iframe {
+	width: 100%;
+	height: 100%;
+}
+
+/* StackBlitz specific ratio */
+.vp-doc .stackblitz-container {
+	aspect-ratio: 16 / 10;
+	width: 100%;
+}
+
+.vp-doc .stackblitz-container iframe {
+	width: 100%;
+	height: 100%;
+}
+
+/* Custom styles for markdown strong text */
+strong {
+	font-weight: 800;
+	color: var(--vp-c-brand-1);
+	text-shadow: 0 0 4px rgba(var(--vp-c-brand-1), 0.4);
+}
+
+/* Custom Styles
+----------------------------------------*/
+img {
+	border-radius: 5px;
+}
+
+table {
+	table-layout: fixed;
+	width: 100%;
+}
+
+table th,
+table td {
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+}
+
+table th:first-child,
+table td:first-child {
+	width: auto;
+}
+
+table th:not(:first-child),
+table td:not(:first-child) {
+	width: auto;
+}
+
+@media (min-width: 640px) {
+	:root {
+		--vp-home-hero-image-filter: blur(56px);
+	}
+}
+
+@media (min-width: 960px) {
+	:root {
+		--vp-home-hero-image-filter: blur(68px);
+	}
+}
+
+.medium-zoom-overlay ~ img {
+	z-index: 101;
+	border-radius: 0;
+}
+
+.medium-zoom--opened .medium-zoom-overlay {
+	opacity: 0.98 !important;
+}

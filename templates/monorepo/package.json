@@ -1,0 +1,21 @@
+{
+	"name": "monorepo",
+	"packageManager": "bun@1.2.15",
+	"workspaces": [
+		"packages/*",
+		"docs",
+		"cli"
+	],
+	"scripts": {
+		"dev": "turbo run dev",
+		"build": "turbo run build",
+		"lint": "biome lint --write && tsc --noEmit",
+		"format": "biome format --write",
+		"update": "taze major -r",
+		"generate": "turbo gen"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "latest",
+		"taze": "latest"
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"allowJs": true,
+		"strict": true,
+		"noEmit": true,
+		"resolveJsonModule": true,
+		"jsx": "preserve",
+		"sourceMap": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"lib": ["ESNext", "DOM"],
+
+		"noImplicitAny": false,
+		"types": ["@types/bun"]
+	},
+	"include": [
+		"**/*.ts",
+		"**/*.d.ts",
+		"**/*.tsx",
+		"**/*.vue",
+		".vitepress/**/*"
+	],
+	"exclude": [
+		"node_modules",
+		".vitepress/dist",
+		".vitepress/cache",
+		".vitepress/theme/composables/*.js"
+	]
+}

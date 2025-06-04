@@ -1,0 +1,50 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"vcs": {
+		"clientKind": "git",
+		"enabled": true,
+		"useIgnoreFile": true
+	},
+	"formatter": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"ignore": [
+			"**/node_modules/**",
+			"**/.vitepress/cache/**",
+			"**/.vitepress/dist/**",
+			"**/dist/**",
+			"**/*.min.js",
+			"**/*.d.ts",
+			"**/public/**"
+		],
+		"rules": {
+			"recommended": true,
+			"style": {
+				"useNodejsImportProtocol": "off"
+			},
+			"correctness": {
+				"noUnusedVariables": "off"
+			}
+		}
+	},
+	"files": {
+		"ignoreUnknown": true,
+		"ignore": [
+			"**/node_modules/**",
+			"**/.git/**",
+			"**/.vitepress/cache/**",
+			"**/.vitepress/dist/**",
+			"**/dist/**",
+			"**/*.min.js",
+			"**/public/**",
+			"**/package-lock.json",
+			"**/yarn.lock",
+			"**/pnpm-lock.yaml"
+		]
+	}
+}

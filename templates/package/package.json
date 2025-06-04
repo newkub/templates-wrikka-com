@@ -1,0 +1,12 @@
+{
+	"name": "@templates/lib-bun",
+	"type": "module",
+	"scripts": {
+		"dev": "bun run src/index.ts",
+		"build": "tsdown",
+		"lint": "biome lint --write && tsc --noEmit",
+		"format": "biome format --write",
+		"check:unused": "knip"
+	},
+	"devDependencies": {}
+}

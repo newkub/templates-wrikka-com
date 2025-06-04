@@ -1,0 +1,8 @@
+{
+	"recommendations": [
+		"github.vscode-pull-request-github",
+		"million.million-lint",
+		"oxlint.oxlint",
+		"bradlc.vscode-tailwindcss"
+	]
+}

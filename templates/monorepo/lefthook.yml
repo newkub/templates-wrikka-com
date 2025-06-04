@@ -1,0 +1,15 @@
+pre-commit:
+  commands:
+    lint:
+      glob: "*.{js,ts,jsx,tsx}"
+      run: bun lint {staged_files}
+    format:
+      glob: "*.{js,ts,jsx,tsx,json,md,yaml,yml}"
+      run: bun format {staged_files}
+
+pre-push:
+  commands:
+    test:
+      run: bun test
+    build:
+      run: bun run build

@@ -1,0 +1,13 @@
+{
+	"name": "@templates/cli",
+	"module": "src/index.ts",
+	"type": "module",
+	"devDependencies": {},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"@clack/prompts": "^0.10.1",
+		"colors": "^1.4.0"
+	}
+}
