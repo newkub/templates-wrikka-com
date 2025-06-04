@@ -1,0 +1,9 @@
+{
+  "name": "@wrikka/uno-config",
+  "version": "1.0.0",
+  "description": "UnoCSS configuration preset for Wrikka projects",
+  "dependencies": {
+    "@iconify-json/mdi": "latest",
+    "unocss": "latest"
+  }
+}

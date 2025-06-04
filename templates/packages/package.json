@@ -1,5 +1,5 @@
 {
-	"name": "@templates/lib-bun",
+	"name": "packages",
 	"type": "module",
 	"scripts": {
 		"dev": "bun run src/index.ts",
