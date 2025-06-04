@@ -1,5 +1,5 @@
 {
-	"name": "next-template-starter",
+	"name": "nextjs",
 	"version": "0.1.0",
 	"packageManager": "bun@1.2.15",
 	"workspaces": [
